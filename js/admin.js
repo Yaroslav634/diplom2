@@ -1,4 +1,3 @@
-// admin.js
 const API_BASE_URL = window.location.origin.includes("localhost")
   ? `http://localhost:${window.location.port || 3001}/api`
   : "/api";
