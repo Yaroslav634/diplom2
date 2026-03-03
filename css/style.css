@@ -1,4 +1,3 @@
-/* ============ ОСНОВНЫЕ СТИЛИ ============ */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,6 @@
 }
 
 :root {
-  /* Светлая тема (по умолчанию) */
   --bg-gradient-start: #f5f7fa;
   --bg-gradient-end: #c3cfe2;
   --bg-primary: #ffffff;
@@ -83,18 +81,15 @@
   --status-cancelled-bg: #ffcdd2;
   --status-cancelled-text: #c62828;
 
-  /* Приоритеты */
   --priority-high: #e74c3c;
   --priority-medium: #f39c12;
   --priority-low: #27ae60;
 
-  /* Бейджи ролей */
   --admin-badge: #e74c3c;
   --manager-badge: #f39c12;
   --user-badge: #3498db;
 }
 
-/* Темная тема */
 [data-theme="dark"] {
   --bg-gradient-start: #1a1a2e;
   --bg-gradient-end: #16213e;
@@ -154,7 +149,6 @@
   --notification-info: #4a9eff;
   --notification-warning: #f39c12;
 
-  /* Статусы заказов в темной теме */
   --status-new-bg: #1a3a5a;
   --status-new-text: #7ab0ff;
   --status-processing-bg: #5a3a1a;
@@ -201,7 +195,6 @@ body {
   padding: 0 20px;
 }
 
-/* ============ ПЕРЕКЛЮЧАТЕЛЬ ТЕМЫ ============ */
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
@@ -256,7 +249,6 @@ input:checked + .slider:before {
   content: "🌙";
 }
 
-/* ============ УТИЛИТЫ ============ */
 .text-center {
   text-align: center;
 }
@@ -421,7 +413,6 @@ input:checked + .slider:before {
   animation: pulse-danger 2s infinite;
 }
 
-/* ============ КНОПКИ ============ */
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -588,7 +579,6 @@ input:checked + .slider:before {
   box-shadow: 0 4px 10px var(--shadow-color);
 }
 
-/* Кнопки действий для таблиц */
 .action-buttons {
   display: flex;
   gap: 8px;
@@ -627,7 +617,6 @@ input:checked + .slider:before {
   transform: translateY(-2px);
 }
 
-/* ============ ФОРМЫ ============ */
 .form-group {
   margin-bottom: 20px;
 }
@@ -702,7 +691,6 @@ input:checked + .slider:before {
   margin-top: 5px;
 }
 
-/* Поле с паролем */
 .password-input-wrapper {
   position: relative;
   display: flex;
@@ -729,7 +717,6 @@ input:checked + .slider:before {
   color: var(--primary-color);
 }
 
-/* Опции формы */
 .form-options {
   display: flex;
   justify-content: space-between;
@@ -767,7 +754,6 @@ input:checked + .slider:before {
   text-decoration: underline;
 }
 
-/* Разделитель */
 .auth-divider {
   position: relative;
   text-align: center;
@@ -792,7 +778,6 @@ input:checked + .slider:before {
   font-size: 0.9rem;
 }
 
-/* Вкладки авторизации */
 .auth-tabs {
   display: flex;
   gap: 10px;
@@ -835,7 +820,6 @@ input:checked + .slider:before {
   border-radius: 3px 3px 0 0;
 }
 
-/* ============ УВЕДОМЛЕНИЕ О ЗАКАЗЕ ============ */
 .order-success-notification {
   position: fixed;
   top: 20px;
@@ -902,7 +886,6 @@ input:checked + .slider:before {
   color: white;
 }
 
-/* ============ КАРТОЧКИ ============ */
 .card {
   background: var(--bg-card);
   border-radius: 10px;
@@ -942,8 +925,6 @@ input:checked + .slider:before {
   padding-top: 15px;
   margin-top: 20px;
 }
-
-/* ============ СЕТКИ ============ */
 .grid {
   display: grid;
   gap: 20px;
@@ -959,7 +940,6 @@ input:checked + .slider:before {
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* ============ ТАБЛИЦЫ ============ */
 .table-container {
   overflow-x: auto;
   border-radius: 8px;
@@ -1010,7 +990,6 @@ input:checked + .slider:before {
   padding: 8px 10px;
 }
 
-/* Специальные таблицы */
 .items-table {
   width: 100%;
   margin: 15px 0;
@@ -1041,7 +1020,6 @@ input:checked + .slider:before {
   background: var(--bg-panel);
 }
 
-/* ============ ЗАГРУЗЧИКИ ============ */
 .loading {
   position: fixed;
   top: 0;
@@ -1099,7 +1077,6 @@ input:checked + .slider:before {
   margin-left: 5px;
 }
 
-/* ============ ШАПКА ============ */
 header {
   background: var(--bg-header);
   color: var(--text-white);
@@ -1147,7 +1124,6 @@ header {
   font-size: 0.9rem;
 }
 
-/* ============ НАВИГАЦИЯ ============ */
 .nav-menu {
   display: flex;
   list-style: none;
@@ -1182,7 +1158,6 @@ header {
   font-size: 1.1rem;
 }
 
-/* ============ ПОЛЬЗОВАТЕЛЬСКОЕ МЕНЮ ============ */
 .user-menu {
   display: flex;
   align-items: center;
@@ -1226,7 +1201,6 @@ header {
   transform: translateY(-2px);
 }
 
-/* Бейджи ролей */
 .role-badge.admin {
   background: var(--admin-badge);
   color: white;
@@ -1240,7 +1214,6 @@ header {
   color: white;
 }
 
-/* ============ СТАТУСЫ И БЕЙДЖИ ============ */
 .status-badge {
   display: inline-block;
   padding: 5px 12px;
@@ -1329,7 +1302,6 @@ header {
   color: #721c24;
 }
 
-/* ============ ТАЙМЛАЙН СТАТУСОВ ============ */
 .status-timeline {
   display: flex;
   justify-content: space-between;
@@ -1400,7 +1372,6 @@ header {
   font-weight: 600;
 }
 
-/* ============ КАРТОЧКИ ЗАКАЗОВ ============ */
 .requests-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -1467,7 +1438,6 @@ header {
   margin-top: auto;
 }
 
-/* ============ АДМИН-ПАНЕЛЬ ============ */
 .admin-container {
   max-width: 1400px;
   margin: 0 auto;
@@ -1544,7 +1514,6 @@ header {
   transform: translateY(-2px);
 }
 
-/* Статистика */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1594,7 +1563,6 @@ header {
   font-size: 0.85rem;
 }
 
-/* Фильтры */
 .filters-section {
   background: var(--bg-card);
   border-radius: 15px;
@@ -1666,7 +1634,6 @@ header {
   flex-wrap: wrap;
 }
 
-/* Вкладки */
 .tabs {
   display: flex;
   gap: 10px;
@@ -1709,7 +1676,6 @@ header {
   display: block;
 }
 
-/* Фильтр-табы */
 .filter-tabs {
   display: flex;
   gap: 10px;
@@ -1738,7 +1704,6 @@ header {
   border-color: var(--primary-color);
 }
 
-/* Хлебные крошки */
 .breadcrumb {
   background: var(--bg-card);
   padding: 12px 20px;
@@ -1771,7 +1736,6 @@ header {
   color: var(--text-secondary);
 }
 
-/* Панели */
 .admin-panel {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -1798,7 +1762,6 @@ header {
   font-size: 1.3rem;
 }
 
-/* ============ МОДАЛЬНЫЕ ОКНА ============ */
 .modal {
   display: none;
   position: fixed;
@@ -1881,7 +1844,6 @@ header {
   background: var(--modal-bg);
 }
 
-/* Специальные стили для модального окна отмены */
 #cancelOrderModal .modal-content {
   animation: shake 0.5s ease-in-out;
 }
@@ -1914,7 +1876,6 @@ header {
   border-color: var(--danger-color);
 }
 
-/* ============ ДЕТАЛИ ЗАКАЗА ============ */
 .order-details {
   padding: 10px;
 }
@@ -1945,7 +1906,6 @@ header {
   border-left: 4px solid var(--primary-color);
 }
 
-/* ============ СООБЩЕНИЯ ============ */
 .empty-message {
   text-align: center;
   padding: 30px;
@@ -1983,7 +1943,6 @@ header {
   border-left: 4px solid var(--warning-color);
 }
 
-/* ============ УВЕДОМЛЕНИЯ ============ */
 .notification {
   position: fixed;
   top: 20px;
@@ -2016,8 +1975,6 @@ header {
 .notification i {
   font-size: 1.2rem;
 }
-
-/* ============ КОНФИГУРАТОР ============ */
 .configurator-grid {
   display: grid;
   grid-template-columns: 250px 1fr 350px;
@@ -2044,7 +2001,6 @@ header {
   font-size: 1.3rem;
 }
 
-/* Категории */
 .categories-list,
 .components-list,
 .selected-list {
